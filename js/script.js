@@ -14,5 +14,8 @@ console.log(cognomi.indexOf(" " + cognomeUtenteMod) +1 );
 
 
 //aggiunta testo su html
-document.getElementById('cognomi').innerHTML += (cognomi.sort());
+//document.getElementById('cognomi').innerHTML += (cognomi.sort());
+for (i = 0; i < cognomi.length; i++) {
+    document.getElementById("cognomi").innerHTML += "<li>" + cognomi[i] + "</li>"
+}
 document.getElementById('posizione').innerHTML += (cognomi.indexOf(" " + cognomeUtenteMod) +1);
